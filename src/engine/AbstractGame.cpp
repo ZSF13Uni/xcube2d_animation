@@ -50,6 +50,7 @@ int AbstractGame::runMainLoop() {
 		if (!paused) {
 			update();
 			updatePhysics();
+			mySystem->update();
 
 			gameTime += 0.016;	// 60 times a sec
 		}
